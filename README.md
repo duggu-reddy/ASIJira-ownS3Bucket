@@ -3,12 +3,13 @@
 Scope of this document is for quick start deployment Jira from your own S3 bucket with step by step. Also, this will extend including external Ansible repositories into same S3 bucket location and change CloudFormation templated accordingly. 
 
 ## Process
-NOTE: Make sure you have awscli, git and IDE tool is installed on your local machine.
+##### NOTE: 
+* Make sure you have awscli, git and IDE tool is installed on your local machine.
 
-## Step 1 Create own S3 bucket
+### Step 1 Create own S3 bucket
 Create S3 bucket where you want to create/launch ASI CloudFormation templates
 
-## Step 2 – Download required Binary files.
+### Step 2 – Download required Binary files.
 * Create a folder in your local machine.
 * Clone Quick Start CloudFormation templated to your local IDE tool for modifications. 
 `git clone --recurse-submodules https://github.com/aws-quickstart/quickstart-atlassian-jira.git`
@@ -21,7 +22,7 @@ This will download a folder, named “dc-deployments-automation”
 
 ![alt text](https://github.com/duggu-reddy/junkFiles/blob/master/file1.png)
 
-## Step 3 – Edit CloudFormation templates. 
+### Step 3 – Edit CloudFormation templates. 
 * First, lets modify templates to consider our S3 bucket created in our account. 
 * Below snippet shows the files and its location to modify S3 Bucket name. 
 
@@ -63,12 +64,12 @@ to
 ![alt text](https://github.com/duggu-reddy/junkFiles/blob/master/file9.png)
 
 
-## Step 4 Upload Code into S3 Bucket
+### Step 4 Upload Code into S3 Bucket
 * Using AWS CLI, upload entire code into S3 bucket created in Step 1 as shown below
 
 ![alt text](https://github.com/duggu-reddy/junkFiles/blob/master/file10.png)
 
-## Step 5 Launch Jira DC with VPC (VPC is optional – based on requirement). 
+### Step 5 Launch Jira DC with VPC (VPC is optional – based on requirement). 
 * Copy file path from S3 bucket to launch CFN stack from CloudFormation service.
 
 ![alt text](https://github.com/duggu-reddy/junkFiles/blob/master/file11.png)
