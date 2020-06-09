@@ -19,6 +19,8 @@ This will download a folder, named “quickstart-atlassian-jira”
 This will download a folder, named “dc-deployments-automation”
 * Make sure above 2 folders are placed at same location, so that we can push them to S3 directly using AWS CLI as shown below.
 
+![alt text](https://github.com/duggu-reddy/junkFiles/blob/master/file1.png)
+
 ## Step 3 – Edit CloudFormation templates. 
 * First, lets modify templates to consider our S3 bucket created in our account. 
 * Below snippet shows the files and its location to modify S3 Bucket name. 
