@@ -24,9 +24,11 @@ This will download a folder, named “dc-deployments-automation”
 ## Step 3 – Edit CloudFormation templates. 
 * First, lets modify templates to consider our S3 bucket created in our account. 
 * Below snippet shows the files and its location to modify S3 Bucket name. 
+
 ![alt text](https://github.com/duggu-reddy/junkFiles/blob/master/file2.png)
 
 * In Parameter section of CFNs (CloudFormation), change “QSS3BucketName” parameter value to your S3 bucket name.
+
 ![alt text](https://github.com/duggu-reddy/junkFiles/blob/master/file4.png)
 
 
